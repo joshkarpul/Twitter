@@ -7,7 +7,6 @@ Assumptions made:
 1. User creation is handled elsewhere and all users within the "users.txt" file are valid users.
 2. Comparable interface uses an acceptable efficient sort algorithm.
 3. Tweets can only be made by existing users.
-4. 
 
 Design choices:
 1. Hashtables are used for Users and User Feeds in order to increase accessibility efficiency.
@@ -15,5 +14,4 @@ Design choices:
    Specific tweets are assumed to not have to be searched for.
 3. Interfaces "IUserData.java", "ITweetData.java" and "IDisplay.java" are used for scalability reasons in order to upgrade to
    different input/output sources without alteration of main code. (for example: changing from text file input to database input).
-4. 
 
