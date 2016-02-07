@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -16,11 +15,6 @@ public class Run {
 		
 		IDisplay twitter = new Twitter (users,tweets);
 		ConsoleDisplay display = new ConsoleDisplay(users ,twitter.getFeeds());
-		try {
-			System.in.read();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 	}
 }

@@ -55,6 +55,7 @@ public class TweetsFileReader implements ITweetData {
 			    	//split the line into the user and a list of who they follow
 			    	splitContent = content.split("> ");
 			    	//create the tweet
+			    	if (splitContent[1].length() > 140) throw new IllegalArgumentException("Tweet length is too large ( > 140 characters");
 			    	Tweet tweet = new Tweet(new User(splitContent[0]), splitContent[1]);
 			    	tweets.add(tweet);
 			    }else{
